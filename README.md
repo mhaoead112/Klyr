@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed:
 
 3. **Install client dependencies**
    ```bash
-   cd ../client
+   cd ../
    npm install
    ```
 
