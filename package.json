@@ -4,14 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm:server\" \"npm:build\"",
-    "client": "vite",
-    "server": "nodemon",
-    "build": "vite build",
-    "build:server": "tsc --project tsconfig.node.json",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "concurrently \"npm:server\" \"npm:client\"",
+  "client": "vite",
+  "server": "nodemon",
+  "build": "vite build && npm run build:server",
+  "build:server": "tsc --project tsconfig.node.json",
+  "start": "node dist/index.js"
+},
   "dependencies": {
     "@types/jsonwebtoken": "^9.0.10",
     "bcrypt": "^6.0.0",
