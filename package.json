@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "dev": "concurrently \"npm:server\" \"npm:build\"",
     "client": "vite",
     "server": "nodemon",
     "build": "vite build",
